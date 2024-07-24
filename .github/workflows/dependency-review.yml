@@ -1,0 +1,26 @@
+name: 'Dependency Review'
+on: 
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  dependency-review:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@0d381219ddf674d61a7572ddd19d7941e271515c # v1
+        with:
+          egress-policy: block
+          disable-telemetry: true
+          allowed-endpoints: >
+            api.github.com:443
+            github.com:443
+
+      - name: 'Checkout Repository'
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332
+        
+      - name: 'Dependency Review'
+        uses: actions/dependency-review-action@0659a74c94536054bfa5aeb92241f70d680cc78e
