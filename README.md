@@ -1,13 +1,9 @@
-# ghafiles
+# ocsp-hosts
 
-This contains baseline GitHub Actions that may be useful for any new project. 
+Let's Encrypt has announced their intent to [stop providing OCSP service](https://news.ycombinator.com/item?id=41046956).
 
-- Adhere to least privilege principles for workflow permissions
-- Use of commit hashes for pinning GitHub Actions dependencies
-- Use of Dependabot to update commit hashes as necessary
-- Use of OpenSSF's [Security Scorecard](https://github.com/ossf/scorecard) (SCORECARD_TOKEN setup required)
-- Use of Step Security's [Harden Runner](https://github.com/step-security/harden-runner)
-- Codespell
-- Super-Linter
-- Semgrep (SEMGREP_APP_TOKEN setup required)
-- (optional) Sync to GitLab (GITLAB_TOKEN setup required)
+This contains a list of known OCSP hostnames as observed by crt.sh. 
+
+- VERIFY BEFORE USING, THIS MAY BREAK THINGS
+- The file will be periodically updated
+- File is formatted to be used as a blocklist
