@@ -7,3 +7,4 @@ This contains a list of known OCSP hostnames as observed by crt.sh.
 - VERIFY BEFORE USING, THIS MAY BREAK THINGS
 - The file will be periodically updated
 - File is formatted to be used as a blocklist
+- Ensure that you understand the difference between fail-open and fail-close behavior
