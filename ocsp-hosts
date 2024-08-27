@@ -1072,6 +1072,7 @@
 0.0.0.0 sk.symcd.com
 0.0.0.0 sl.ocsp.quovadisglobal.com
 0.0.0.0 sl.symcd.com
+0.0.0.0 smimersarootca2024.ocsp.secom-cert.jp
 0.0.0.0 sm.symcd.com
 0.0.0.0 snca3-ocsp.nbu.gov.sk
 0.0.0.0 sn.symcd.com
@@ -1179,8 +1180,10 @@
 0.0.0.0 tj2.symcb.com
 0.0.0.0 tj.symcd.com
 0.0.0.0 tk.symcd.com
+0.0.0.0 tlseccrootca2024.ocsp.secom-cert.jp
 0.0.0.0 tlsrootca2023-ocsp.e-szigno.hu
 0.0.0.0 tlsrsarootca2023.ocsp.secom-cert.jp
+0.0.0.0 tlsrsarootca2024.ocsp.secom-cert.jp
 0.0.0.0 tl.symcd.com
 0.0.0.0 tm.symcd.com
 0.0.0.0 tn.symcd.com
