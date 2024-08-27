@@ -21,7 +21,7 @@ git pull
 # normalize
 # sort then uniq
 # output in hosts format
-curl -sL https://crt.sh/ocsp-responders | \
+curl --max-time 180 -sL https://crt.sh/ocsp-responders | \
 grep "A title" | \
 sed -n 's/.*<A[^>]*>\([^<]*\)<\/A>.*/\1/p' | \
 sed -e 's#https\?://##' -e 's#hhtp://##' -e 's#:[0-9]*##' -e "s#/.*##" | \
