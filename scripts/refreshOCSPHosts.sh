@@ -21,8 +21,8 @@ git pull
 # normalize
 # sort then uniq
 # output in hosts format
-curl --max-time 180 -sL https://crt.sh/ocsp-responders | \
-grep "A title" | \
+curl --max-time 180 -sL https://crt.sh/ocsp-responders > /tmp/rawr && \
+grep "A title" /tmp/rawr | \
 sed -n 's/.*<A[^>]*>\([^<]*\)<\/A>.*/\1/p' | \
 sed -e 's#https\?://##' -e 's#hhtp://##' -e 's#:[0-9]*##' -e "s#/.*##" | \
 grep -iEv "ldap:|url=|uri=|uri:" | \
@@ -31,5 +31,5 @@ grep -Ev '^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$' | \
 tr '[:upper:]' '[:lower:]' | \
 tr -cd '[:alnum:]-.\n' | \
 sort -u | \
-sed -e 's#^#0.0.0.0 #' > ocsp-hosts
-
+sed -e 's#^#0.0.0.0 #' > ocsp-hosts && \
+rm /tmp/rawr
