@@ -12,7 +12,7 @@ IFS=$'\n\t'
 # make sure we have the latest commits
 git pull
 
-# fetch from crt.sh
+# fetch from crt.sh into temp file
 # only parse the lines with potential OCSP hosts
 # extract the content
 # cleanup to only retain hostnames
@@ -20,7 +20,9 @@ git pull
 # drop IP addresses
 # normalize
 # sort then uniq
+# exclude as needed
 # output in hosts format
+# remove temp file
 curl --max-time 180 -sL https://crt.sh/ocsp-responders > /tmp/rawr && \
 grep "A title" /tmp/rawr | \
 sed -n 's/.*<A[^>]*>\([^<]*\)<\/A>.*/\1/p' | \
@@ -31,5 +33,6 @@ grep -Ev '^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$' | \
 tr '[:upper:]' '[:lower:]' | \
 tr -cd '[:alnum:]-.\n' | \
 sort -u | \
-sed -e 's#^#0.0.0.0 #' > ocsp-hosts && \
+sed -e 's#^#0.0.0.0 #' | \
+grep -v -f exclude.txt > ocsp-hosts && \
 rm /tmp/rawr
