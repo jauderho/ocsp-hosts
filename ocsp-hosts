@@ -144,6 +144,7 @@
 0.0.0.0 evcasha2.ocsp-certum.com
 0.0.0.0 evcscasha2.ocsp-certum.com
 0.0.0.0 evcs-ocsp.ws.symantec.com
+0.0.0.0 eveccca2024.ocsp.secom-cert.jp
 0.0.0.0 eveccca.ocsp-certum.com
 0.0.0.0 evintl-ocsp.verisign.com
 0.0.0.0 evlpki03.gracenote.gracenote.com
@@ -272,6 +273,8 @@
 0.0.0.0 itrusov.ocsp-certum.com
 0.0.0.0 itso.ocsp.sectigo.com
 0.0.0.0 jjedsocsp1.jnj.com
+0.0.0.0 joyssldvtlsg2r33ca.ocsp-certum.com
+0.0.0.0 joysslovtlsg2r33ca.ocsp-certum.com
 0.0.0.0 kagoya.ocsp.secomtrust.net
 0.0.0.0 kddiweb2.ocsp.secomtrust.net
 0.0.0.0 kddiweb3.ocsp.secomtrust.net
@@ -925,6 +928,7 @@
 0.0.0.0 ov.g4.ocsp.pubcert.jprs.jp
 0.0.0.0 ov.ocsp.pubcert.jprs.jp
 0.0.0.0 ovrsaca2023.ocsp.secom-cert.jp
+0.0.0.0 ovrsaca2024.ocsp.secom-cert.jp
 0.0.0.0 pca-g2-ocsp.geotrust.com
 0.0.0.0 pca-g3-ocsp.geotrust.com
 0.0.0.0 pca-g4-ocsp.geotrust.com
