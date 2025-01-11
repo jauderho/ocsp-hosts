@@ -63,6 +63,7 @@
 0.0.0.0 classic.ocsp.dhimyotis.com
 0.0.0.0 clients1.google.com
 0.0.0.0 commercial.ocsp.identrust.com
+0.0.0.0 commercialpte.ocsp.identrust.com
 0.0.0.0 corporate-pki.telekom.de
 0.0.0.0 crl2.e-certchile.cl
 0.0.0.0 crl.deltacredit.ru
@@ -73,6 +74,7 @@
 0.0.0.0 crl.schering.de
 0.0.0.0 csca.ocsp.certum.pl
 0.0.0.0 cscasha2.ocsp-certum.com
+0.0.0.0 csrootca2024-ocsp.e-szigno.hu
 0.0.0.0 ctrootsha1.ocsp.omniroot.com
 0.0.0.0 ctrootsha2.ocsp.omniroot.com
 0.0.0.0 cttest.twca.com.tw
@@ -106,6 +108,9 @@
 0.0.0.0 e1.o.lencr.org
 0.0.0.0 e5.o.lencr.org
 0.0.0.0 e6.o.lencr.org
+0.0.0.0 ec2sslca2017-ocsp1.e-szigno.hu
+0.0.0.0 ec2sslca2017-ocsp2.e-szigno.hu
+0.0.0.0 ec2sslca2017-ocsp3.e-szigno.hu
 0.0.0.0 ec3sslca2017-ocsp1.e-szigno.hu
 0.0.0.0 ec3sslca2017-ocsp2.e-szigno.hu
 0.0.0.0 ec3sslca2017-ocsp3.e-szigno.hu
@@ -122,18 +127,24 @@
 0.0.0.0 entityca.ocsp.dhimyotis.com
 0.0.0.0 e.on-group-ca-2-2013.ocsp.d-trust.net
 0.0.0.0 eon-group-ca-2-2013.ocsp.d-trust.net
+0.0.0.0 eosslca2017-ocsp1.e-szigno.hu
+0.0.0.0 eosslca2017-ocsp2.e-szigno.hu
+0.0.0.0 eosslca2017-ocsp3.e-szigno.hu
 0.0.0.0 eovtlsca2023-ocsp.e-szigno.hu
 0.0.0.0 eqtlsca2018-ocsp1.e-szigno.hu
 0.0.0.0 eqtlsca2018-ocsp2.e-szigno.hu
 0.0.0.0 eqtlsca2018-ocsp3.e-szigno.hu
 0.0.0.0 eqtlsca2023-ocsp.e-szigno.hu
 0.0.0.0 esafer.ocsp.sectigo.com
+0.0.0.0 esmimerootca2024-ocsp.e-szigno.hu
+0.0.0.0 etlsrootca2024-ocsp.e-szigno.hu
 0.0.0.0 etsaca2017-ocsp1.e-szigno.hu
 0.0.0.0 etsaca2017-ocsp2.e-szigno.hu
 0.0.0.0 etsaca2017-ocsp3.e-szigno.hu
 0.0.0.0 etsaca2020-ocsp1.e-szigno.hu
 0.0.0.0 etsaca2020-ocsp2.e-szigno.hu
 0.0.0.0 etsaca2020-ocsp3.e-szigno.hu
+0.0.0.0 etsarootca2024-ocsp.e-szigno.hu
 0.0.0.0 ev256secureecc-ocsp.ws.symantec.com
 0.0.0.0 ev2.ocsp.secomtrust.net
 0.0.0.0 eva.orc.com
@@ -191,6 +202,8 @@
 0.0.0.0 gd.symcd.com
 0.0.0.0 geant.ocsp.sectigo.com
 0.0.0.0 genious.ocsp.sectigo.com
+0.0.0.0 geossldvtlsr34g2ca.ocsp-certum.com
+0.0.0.0 geosslovtlsr34g2ca.ocsp-certum.com
 0.0.0.0 get-ocsp.certificat.com
 0.0.0.0 gisca.ocsp-certum.com
 0.0.0.0 gisca.ocsp.certum.pl
@@ -300,6 +313,8 @@
 0.0.0.0 namecheap.ocsp.sectigo.com
 0.0.0.0 nazwassl2.ocsp-certum.com
 0.0.0.0 nazwassl2sha2.ocsp-certum.com
+0.0.0.0 nazwassldvtlsg2e29ca.ocsp-certum.com
+0.0.0.0 nazwassldvtlsg2r29ca.ocsp-certum.com
 0.0.0.0 nazwassl.ocsp-certum.com
 0.0.0.0 nazwassl.ocsp.certum.pl
 0.0.0.0 netartcadv2.ocsp-certum.com
@@ -703,6 +718,7 @@
 0.0.0.0 ocsp.pkioverheid.nl
 0.0.0.0 ocsp.pki-services.siemens.com
 0.0.0.0 ocsp.pki.state.gov
+0.0.0.0 ocsp-pki-test.certinomis.com
 0.0.0.0 ocsp.pki.va.gov
 0.0.0.0 ocsp.pki.wayport.net
 0.0.0.0 ocsp.pkiworks.com
@@ -836,6 +852,7 @@
 0.0.0.0 ocsp.testeca.hinet.net
 0.0.0.0 ocsp.teste.multicert.com
 0.0.0.0 ocsptest.nrca.go.th
+0.0.0.0 ocsp.testpki.aretiico.com
 0.0.0.0 ocsp.thawte.com
 0.0.0.0 ocsp.tipki.it
 0.0.0.0 ocsp.tls.hinet.net
@@ -969,6 +986,7 @@
 0.0.0.0 publicocsp.det.nsw.edu.au
 0.0.0.0 public.ocsp.identrust.com
 0.0.0.0 publicsector.ocsp.identrust.com
+0.0.0.0 qca4-ocsp.disig.sk
 0.0.0.0 qca.hiteles.gov.hu
 0.0.0.0 qca.ocsp.luxtrust.lu
 0.0.0.0 qcpocsp2012.e-szigno.hu
@@ -991,6 +1009,7 @@
 0.0.0.0 rapidssl-ocsp.geotrust.com
 0.0.0.0 rb.symcd.com
 0.0.0.0 rca.e-szigno.hu
+0.0.0.0 rca.navercorp.com
 0.0.0.0 rc.symcd.com
 0.0.0.0 rd.symcd.com
 0.0.0.0 repository.certiphire.com
@@ -1136,6 +1155,10 @@
 0.0.0.0 status.rapidssl.com
 0.0.0.0 status.thawte.com
 0.0.0.0 std-ocsp.trustwise.com
+0.0.0.0 stg-e5.o.lencr.org
+0.0.0.0 stg-e6.o.lencr.org
+0.0.0.0 stg-r10.o.lencr.org
+0.0.0.0 stg-r11.o.lencr.org
 0.0.0.0 strato-ocsp.digitalcertvalidation.com
 0.0.0.0 strong-auth.eop.gov
 0.0.0.0 st.symcd.com
@@ -1201,6 +1224,7 @@
 0.0.0.0 trustidcaas.ocsp.identrust.com
 0.0.0.0 trustocean.ocsp-certum.com
 0.0.0.0 trustocean.ocsp.sectigo.com
+0.0.0.0 tsarootca2024-ocsp.e-szigno.hu
 0.0.0.0 tsa.utimaco.com
 0.0.0.0 ts-ocsp.ws.symantec.com
 0.0.0.0 tsp.ardaco.com
@@ -1273,6 +1297,8 @@
 0.0.0.0 xinchachadv.ocsp-certum.com
 0.0.0.0 xinchachaev.ocsp-certum.com
 0.0.0.0 xinchachaov.ocsp-certum.com
+0.0.0.0 xinnetdvtlsr34g2ca.ocsp-certum.com
+0.0.0.0 xinnetovtlsr34g2ca.ocsp-certum.com
 0.0.0.0 xips2.ocsp.secomtrust.net
 0.0.0.0 xnetcas2.ocsp.secomtrust.net
 0.0.0.0 xnetcas.ocsp.secomtrust.net
