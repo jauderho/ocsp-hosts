@@ -120,6 +120,7 @@
 0.0.0.0 eca.ocspts.identrust.com
 0.0.0.0 ecas2.ocsp.identrust.com
 0.0.0.0 edvtlsca2023-ocsp.e-szigno.hu
+0.0.0.0 edvtlsca2025-ocsp.e-szigno.hu
 0.0.0.0 ee-ocsp.omniroot.com
 0.0.0.0 ejbca.halcom.local
 0.0.0.0 emudhra.ocsp.sectigo.com
@@ -131,10 +132,12 @@
 0.0.0.0 eosslca2017-ocsp2.e-szigno.hu
 0.0.0.0 eosslca2017-ocsp3.e-szigno.hu
 0.0.0.0 eovtlsca2023-ocsp.e-szigno.hu
+0.0.0.0 eovtlsca2025-ocsp.e-szigno.hu
 0.0.0.0 eqtlsca2018-ocsp1.e-szigno.hu
 0.0.0.0 eqtlsca2018-ocsp2.e-szigno.hu
 0.0.0.0 eqtlsca2018-ocsp3.e-szigno.hu
 0.0.0.0 eqtlsca2023-ocsp.e-szigno.hu
+0.0.0.0 eqtlsca2025-ocsp.e-szigno.hu
 0.0.0.0 esafer.ocsp.sectigo.com
 0.0.0.0 esmimerootca2024-ocsp.e-szigno.hu
 0.0.0.0 etlsrootca2024-ocsp.e-szigno.hu
@@ -728,6 +731,7 @@
 0.0.0.0 ocsp.postsignum.cz
 0.0.0.0 ocsp.preprod.trust.telia.com
 0.0.0.0 ocsp.prod.buypass.no
+0.0.0.0 ocsp-pte.actalis.it
 0.0.0.0 ocsp.publicca.hinet.net
 0.0.0.0 ocspqa.visa.com
 0.0.0.0 ocsp.qca.gov.mt
@@ -855,6 +859,7 @@
 0.0.0.0 ocsp.testpki.aretiico.com
 0.0.0.0 ocsp.thawte.com
 0.0.0.0 ocsp.tipki.it
+0.0.0.0 ocsp-tls.harica.gr
 0.0.0.0 ocsp.tls.hinet.net
 0.0.0.0 ocsp.tlsroot.pki-lab.gov
 0.0.0.0 ocsp.tradesign.net
@@ -1208,6 +1213,7 @@
 0.0.0.0 tj2.symcb.com
 0.0.0.0 tj.symcd.com
 0.0.0.0 tk.symcd.com
+0.0.0.0 tlcdvtlsr34g2ca.ocsp-certum.com
 0.0.0.0 tlseccrootca2024.ocsp.secom-cert.jp
 0.0.0.0 tlsrootca2023-ocsp.e-szigno.hu
 0.0.0.0 tlsrsarootca2023.ocsp.secom-cert.jp
@@ -1219,6 +1225,7 @@
 0.0.0.0 tqrca1.ocsp.telesec.de
 0.0.0.0 tq.symcd.com
 0.0.0.0 trustasiadv.ocsp-certum.com
+0.0.0.0 trustasiadvtlsr35g2ca.ocsp-certum.com
 0.0.0.0 trustasiaev.ocsp-certum.com
 0.0.0.0 trustasiaov.ocsp-certum.com
 0.0.0.0 trustidcaas.ocsp.identrust.com
@@ -1298,6 +1305,7 @@
 0.0.0.0 xinchachaev.ocsp-certum.com
 0.0.0.0 xinchachaov.ocsp-certum.com
 0.0.0.0 xinnetdvtlsr34g2ca.ocsp-certum.com
+0.0.0.0 xinnetevtlsr34g2ca.ocsp-certum.com
 0.0.0.0 xinnetovtlsr34g2ca.ocsp-certum.com
 0.0.0.0 xips2.ocsp.secomtrust.net
 0.0.0.0 xnetcas2.ocsp.secomtrust.net
