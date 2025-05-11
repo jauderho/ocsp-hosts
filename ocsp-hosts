@@ -30,6 +30,7 @@
 0.0.0.0 br-ca-1-20-1-2020.ocsp.d-trust.net
 0.0.0.0 br-ca-1-20-2-2020.ocsp.d-trust.net
 0.0.0.0 br-root-ca1-2020.ocsp.d-trust.net
+0.0.0.0 btdvtlsr35g2ca.ocsp-certum.com
 0.0.0.0 ca1.agid.gov.it
 0.0.0.0 ca1.gov.dk
 0.0.0.0 ca-31-main.csd.disa.mil
@@ -170,6 +171,7 @@
 0.0.0.0 ev-root-ca1-2020.ocsp.d-trust.net
 0.0.0.0 evrootocsp.pkioverheid.nl
 0.0.0.0 evroot.ocsp.secomtrust.net
+0.0.0.0 evrsaca2024.ocsp.secom-cert.jp
 0.0.0.0 evrsaca.ocsp-certum.com
 0.0.0.0 evsecuredsa-ocsp.ws.symantec.com
 0.0.0.0 evsecure-ocsp.geotrust.com
@@ -285,6 +287,7 @@
 0.0.0.0 issauth.ocsp.sectigo.com
 0.0.0.0 itrusdv2.ocsp-certum.com
 0.0.0.0 itrusdv.ocsp-certum.com
+0.0.0.0 itrusdvtlsr35g2ca.ocsp-certum.com
 0.0.0.0 itrusov2.ocsp-certum.com
 0.0.0.0 itrusov.ocsp-certum.com
 0.0.0.0 itso.ocsp.sectigo.com
@@ -435,6 +438,7 @@
 0.0.0.0 ocsp.acsoluti.com.br
 0.0.0.0 ocsp.actalis.it
 0.0.0.0 ocsp.adif.es
+0.0.0.0 ocsp-a.emsign.com
 0.0.0.0 ocsp.affirmtrust.com
 0.0.0.0 ocsp.akd.hr
 0.0.0.0 ocsp.alfasign.ro
@@ -457,6 +461,7 @@
 0.0.0.0 ocsp.auc.cartaodecidadao.pt
 0.0.0.0 ocsp.audkenni.is
 0.0.0.0 ocsp.bechtel.com
+0.0.0.0 ocsp-b.emsign.com
 0.0.0.0 ocsp.bjca.cn
 0.0.0.0 ocsp-b.pki.wayport.net
 0.0.0.0 ocspbs.buypassca.com
@@ -478,6 +483,7 @@
 0.0.0.0 ocsp.catcert.net
 0.0.0.0 ocsp.catrust.oemssl.cn
 0.0.0.0 ocsp.ca.vodafone.com
+0.0.0.0 ocsp-c.emsign.com
 0.0.0.0 ocsp.certdigital.ro
 0.0.0.0 ocsp.certicamara.co
 0.0.0.0 ocsp.certicamara.com
@@ -555,9 +561,11 @@
 0.0.0.0 ocsp.e2m01.amazontrust.com
 0.0.0.0 ocsp.e2m02.amazontrust.com
 0.0.0.0 ocsp.e2m03.amazontrust.com
+0.0.0.0 ocsp.e2m04.amazontrust.com
 0.0.0.0 ocsp.e3m01.amazontrust.com
 0.0.0.0 ocsp.e3m02.amazontrust.com
 0.0.0.0 ocsp.e3m03.amazontrust.com
+0.0.0.0 ocsp.e3m04.amazontrust.com
 0.0.0.0 ocsp.eadtrust.eu
 0.0.0.0 ocsp.eca.hinet.net
 0.0.0.0 ocsp.ecce.gov.pt
@@ -962,6 +970,7 @@
 0.0.0.0 pkicvs.cisco.com
 0.0.0.0 pki.gjccorp.com.br
 0.0.0.0 pki.moi.gov.qa
+0.0.0.0 pki.msctrustgate.com
 0.0.0.0 pki.myovcloud.com
 0.0.0.0 pki-ocsp.atos.net
 0.0.0.0 pki-ocsp.atos.netttps
@@ -1214,6 +1223,7 @@
 0.0.0.0 tj.symcd.com
 0.0.0.0 tk.symcd.com
 0.0.0.0 tlcdvtlsr34g2ca.ocsp-certum.com
+0.0.0.0 tlcevtlsr34g2ca.ocsp-certum.com
 0.0.0.0 tlseccrootca2024.ocsp.secom-cert.jp
 0.0.0.0 tlsrootca2023-ocsp.e-szigno.hu
 0.0.0.0 tlsrsarootca2023.ocsp.secom-cert.jp
@@ -1228,6 +1238,8 @@
 0.0.0.0 trustasiadvtlsr35g2ca.ocsp-certum.com
 0.0.0.0 trustasiaev.ocsp-certum.com
 0.0.0.0 trustasiaov.ocsp-certum.com
+0.0.0.0 trustasiaovtlse35g2ca.ocsp-certum.com
+0.0.0.0 trustasiaovtlsr35g2ca.ocsp-certum.com
 0.0.0.0 trustidcaas.ocsp.identrust.com
 0.0.0.0 trustocean.ocsp-certum.com
 0.0.0.0 trustocean.ocsp.sectigo.com
