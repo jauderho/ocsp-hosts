@@ -1,0 +1,114 @@
+# updatebot
+#
+# This runs monthly to regenerate the OCSP host blocklist from crt.sh
+#
+name: Refresh OCSP Hosts
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - scripts/refreshOCSPHosts.sh
+      - .github/workflows/refresh-ocsp-hosts.yml
+  workflow_dispatch:
+    inputs:
+      dryrun:
+        description: 'Report the changes without committing'
+        type: boolean
+        default: false
+  schedule:
+    # 07:00 UTC on the first day of the month
+    - cron: "0 7 1 * *"
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  refresh-ocsp-hosts:
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@e14015d583714f6e62063499dc959a02595150a1 # v2.21.1
+        with:
+          egress-policy: block
+          disable-telemetry: true
+          allowed-endpoints: >
+            api.github.com:443
+            crt.sh:443
+            github.com:443
+            objects.githubusercontent.com:443
+
+      # checkout with a PAT configured with workflow access to allow the workflow to check changes back in
+      - name: Source checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          token: ${{ secrets.UPDATE_TOKEN }}
+          fetch-depth: 1
+
+      - name: Setup SSH keys
+        env:
+          BOT_SSH_PRIVATE_KEY: ${{ secrets.JBOT_SSH_PRIVATE_KEY }}
+          BOT_SSH_PUBLIC_KEY: ${{ secrets.JBOT_SSH_PUBLIC_KEY }}
+        run: |
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          echo "$BOT_SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
+          echo "$BOT_SSH_PUBLIC_KEY" > ~/.ssh/id_ed25519.pub
+          chmod 600 ~/.ssh/id_ed25519
+          chmod 644 ~/.ssh/id_ed25519.pub
+
+      # Regenerate the list. The script refuses to write an implausibly small
+      # list, so a crt.sh outage fails the run instead of emptying the file.
+      # Its stdout is a key=value summary: changed, hosts, added, removed.
+      - name: Refresh blocklist
+        id: refresh
+        run: |
+          ./scripts/refreshOCSPHosts.sh --verbose \
+            ${{ inputs.dryrun && '--dryrun' || '' }} >> "$GITHUB_OUTPUT"
+
+      - name: Commit blocklist
+        if: steps.refresh.outputs.changed == 'true' && !inputs.dryrun
+        env:
+          HOSTS: ${{ steps.refresh.outputs.hosts }}
+          ADDED: ${{ steps.refresh.outputs.added }}
+          REMOVED: ${{ steps.refresh.outputs.removed }}
+        run: |
+          git config --global user.name "Jauder Ho Bot"
+          git config --global user.email "jauderho-bot@users.noreply.github.com"
+          git config --global user.signingkey ~/.ssh/id_ed25519.pub
+          git config --global gpg.format ssh
+          git config --global commit.gpgsign true
+          git add ocsp-hosts
+          git commit -S -s -m "Refresh OCSP hosts from crt.sh" \
+            -m "${HOSTS} hosts (+${ADDED} / -${REMOVED})"
+          # Refuse to push an unsigned commit if the signing key is misconfigured
+          git cat-file -p HEAD | grep -q '^gpgsig ' ||
+            { echo 'commit is not signed, refusing to push' >&2; exit 1; }
+          git push
+
+      - name: Remove SSH keys
+        if: always()
+        run: rm -rf ~/.ssh
+
+      - name: Summary
+        if: always()
+        env:
+          CHANGED: ${{ steps.refresh.outputs.changed }}
+          HOSTS: ${{ steps.refresh.outputs.hosts }}
+          ADDED: ${{ steps.refresh.outputs.added }}
+          REMOVED: ${{ steps.refresh.outputs.removed }}
+        run: |
+          if [ "${CHANGED:-}" = 'true' ]; then
+            detail="${HOSTS} hosts (+${ADDED} / -${REMOVED})"
+          elif [ "${CHANGED:-}" = 'false' ]; then
+            detail="no change (${HOSTS} hosts)"
+          else
+            detail='refresh failed, list left untouched'
+          fi
+          printf 'ocsp-hosts: %s\n' "$detail" >> "$GITHUB_STEP_SUMMARY"
