@@ -105,6 +105,7 @@
 0.0.0.0 cttest.twca.com.tw
 0.0.0.0 cyberfolks.ocsp-certum.com
 0.0.0.0 cyberfolks2.ocsp-certum.com
+0.0.0.0 cyberfolksdvtlsg3r31ca.ocsp-certum.com
 0.0.0.0 d-trust-application-certificates-ca-3-2-2016.ocsp.d-trust.net
 0.0.0.0 d-trust-br-ca-2-23-1-2023.ocsp.d-trust.net
 0.0.0.0 d-trust-br-ca-2-23-2-2023.ocsp.d-trust.net
@@ -122,6 +123,8 @@
 0.0.0.0 d-trust-sbr-root-ca-2-2022.ocsp.d-trust.net
 0.0.0.0 d-trust-sce384-ca-1-20-31-2026.ocsp.d-trust.net
 0.0.0.0 d-trust-scr4096-ca-2-23-31-2026.ocsp.d-trust.net
+0.0.0.0 d-trust-we384-ca-1-20-12-2026.ocsp.d-trust.net
+0.0.0.0 d-trust-we384-ca-1-20-22-2026.ocsp.d-trust.net
 0.0.0.0 d-trust-wr4096-ca-2-23-12-2026.ocsp.d-trust.net
 0.0.0.0 d-trust-wr4096-ca-2-23-22-2026.ocsp.d-trust.net
 0.0.0.0 demoocsp.oaticerts.com
@@ -265,6 +268,9 @@
 0.0.0.0 gdcadv.ocsp-certum.com
 0.0.0.0 gdcaev.ocsp-certum.com
 0.0.0.0 gdcaov.ocsp-certum.com
+0.0.0.0 gdcatrustauthdvtlsg3r31ca.ocsp-certum.com
+0.0.0.0 gdcatrustauthevtlsg3r31ca.ocsp-certum.com
+0.0.0.0 gdcatrustauthovtlsg3r31ca.ocsp-certum.com
 0.0.0.0 geant.ocsp.sectigo.com
 0.0.0.0 genious.ocsp.sectigo.com
 0.0.0.0 geossldvtlsr34g2ca.ocsp-certum.com
@@ -374,6 +380,7 @@
 0.0.0.0 lax.sytes.net
 0.0.0.0 lh.ocsp-certum.com
 0.0.0.0 lh2.ocsp-certum.com
+0.0.0.0 lhpldvtlsg3r31ca.ocsp-certum.com
 0.0.0.0 ltgroot.ocsp.luxtrust.lu
 0.0.0.0 mh.ocsp.secomtrust.net
 0.0.0.0 mh2.ocsp.secomtrust.net
@@ -726,9 +733,13 @@
 0.0.0.0 ocsp.msocsp.com
 0.0.0.0 ocsp.multicert.com
 0.0.0.0 ocsp.myndighetsca.se
+0.0.0.0 ocsp.n2xe2m1.amazontrust.com
+0.0.0.0 ocsp.n2xe3m1.amazontrust.com
+0.0.0.0 ocsp.n2xr2m1.amazontrust.com
 0.0.0.0 ocsp.namirialtsp.com
 0.0.0.0 ocsp.narodni-ca.cz
 0.0.0.0 ocsp.narodni-ca.gov.cz
+0.0.0.0 ocsp.nca.gov.lk
 0.0.0.0 ocsp.ncdc.gov.sa
 0.0.0.0 ocsp.ncode.in
 0.0.0.0 ocsp.ncodesolutions.com
@@ -1239,6 +1250,7 @@
 0.0.0.0 sd.symcd.com
 0.0.0.0 se.symcd.com
 0.0.0.0 se2.symcb.com
+0.0.0.0 securesitedvtlsg3r31ca.ocsp-certum.com
 0.0.0.0 services.evrotrust.com
 0.0.0.0 servicesca.ocsp.certigna.fr
 0.0.0.0 servicesca.ocsp.dhimyotis.com
@@ -1278,6 +1290,7 @@
 0.0.0.0 so.symcd.com
 0.0.0.0 socsp.turktrust.com.tr
 0.0.0.0 soomadv.ocsp-certum.com
+0.0.0.0 soomadvtlsg3r31ca.ocsp-certum.com
 0.0.0.0 sp.symcd.com
 0.0.0.0 sr.symcd.com
 0.0.0.0 sr2.symcb.com
@@ -1452,6 +1465,8 @@
 0.0.0.0 vr-ident-ssl-ca-2020.ocsp.d-trust.net
 0.0.0.0 vtca-p.eprov.seti.vt.edu
 0.0.0.0 vtca.pki.vt.edu
+0.0.0.0 vtrusdvtlsg3r31ca.ocsp-certum.com
+0.0.0.0 vtrusovtlsg3r31ca.ocsp-certum.com
 0.0.0.0 webnic.ocsp.sectigo.com
 0.0.0.0 whitessldvtlsg2e36ca.ocsp-certum.com
 0.0.0.0 widepointnfiroot2.eva.orc.com
@@ -1479,6 +1494,8 @@
 0.0.0.0 www3.postsignum.cz
 0.0.0.0 x3ocsp.identrust.com
 0.0.0.0 xca.nat.gov.tw
+0.0.0.0 xcctrustdvtlsg3r31ca.ocsp-certum.com
+0.0.0.0 xcctrustovtlsg3r31ca.ocsp-certum.com
 0.0.0.0 xinchacha2dv.ocsp-certum.com
 0.0.0.0 xinchacha2ov.ocsp-certum.com
 0.0.0.0 xinchachadv.ocsp-certum.com
@@ -1498,3 +1515,6 @@
 0.0.0.0 yektaov.ocsp-certum.com
 0.0.0.0 zerossl.ocsp.sectigo.com
 0.0.0.0 ziwit.ocsp.sectigo.com
+0.0.0.0 zycatrustdvtlsg3r31ca.ocsp-certum.com
+0.0.0.0 zycatrustevtlsg3r31ca.ocsp-certum.com
+0.0.0.0 zycatrustovtlsg3r31ca.ocsp-certum.com
